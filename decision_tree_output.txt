@@ -1,0 +1,31 @@
+Best parameters set found on development set:
+
+{'min_samples_split': 4}
+
+Grid scores on development set:
+
+0.820 (+/-0.017) for {'min_samples_split': 2}
+0.816 (+/-0.015) for {'min_samples_split': 3}
+0.828 (+/-0.016) for {'min_samples_split': 4}
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+MSE: 0.03100558659217877
+
+Accuracy Score: 96.89944134078212%
+
+F1 Score: 0.8340807174887891
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98      3252
+           1       0.82      0.85      0.83       328
+
+   micro avg       0.97      0.97      0.97      3580
+   macro avg       0.90      0.92      0.91      3580
+weighted avg       0.97      0.97      0.97      3580
+
+

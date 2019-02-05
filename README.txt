@@ -9,3 +9,4 @@ source activate ml_assignment_1
 conda install scikit-learn
 conda install pandas
 conda install python-graphviz
+conda install matplotlib
