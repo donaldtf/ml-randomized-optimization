@@ -1,64 +1,62 @@
 import numpy as np
-import pandas as pd
+# Thanks to Scikit-learn
+# Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
-from utils import get_pulsar_data, compute_stats
-from plot_learning_curve import plot_learning_curve
-from tune_params import get_optimized_classifier
+from utils import get_hmeq_data, get_pulsar_data, compute_stats, plot_learning_curve, get_optimized_classifier
 import sys
+
+def run_dt(name, x_train, x_test, y_train, y_test, min_sample_list, scoring):
+    print ("Working on {} data".format(name))
+
+    img_name = "images/{}_decision_tree_learning_curve.png".format(name)
+    img_title = '{} Decision Tree Learning Curve'.format(name)
+    report_name = "reports/{}_decision_tree_output.txt".format(name)
+
+    sys.stdout = open(report_name, "w")
+
+    tuned_parameters = [{'min_samples_split': min_sample_list}]
+
+    clf = get_optimized_classifier(
+        estimator=DecisionTreeClassifier(random_state=99),
+        tuned_parameters=tuned_parameters,
+        x_train=x_train,
+        y_train=y_train
+        )
+
+    best_min_samples = clf.best_params_['min_samples_split']
+    optimized_clf = DecisionTreeClassifier(min_samples_split=best_min_samples, random_state=99)
+
+    plot_learning_curve(
+        optimized_clf,
+        title=img_title,
+        file_name=img_name,
+        X=x_train,
+        y=y_train,
+        scoring=scoring,
+        )
+
+    optimized_clf.fit(x_train, y_train)
+    y_pred = optimized_clf.predict(x_test)
+
+    compute_stats(y_test, y_pred)
+
+    sys.stdout = sys.__stdout__
+    print ("Finished {} decision tree!".format(name))
+
+def run_pulsar_dt():
+    x_train, x_test, y_train, y_test = get_pulsar_data()
+    min_sample_list = list(range(2,100))
+    run_dt("pulsar", x_train, x_test, y_train, y_test, min_sample_list, scoring="f1")
+
+def run_hmeq_dt():
+    x_train, x_test, y_train, y_test = get_hmeq_data()
+    min_sample_list = list(range(2,100))
+    run_dt("hmeq", x_train, x_test, y_train, y_test, min_sample_list, scoring="f1")
 
 print ("Running Decision Tree Code, this should take a minute or two")
 
-# Print to decision_tree_file
-sys.stdout = open("decision_tree_output.txt", "w")
+run_pulsar_dt()
+run_hmeq_dt()
 
-# Thanks to Scikit-learn
-# Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
+print ("Finished Running Decision Tree")
 
-# https://medium.com/dunder-data/from-pandas-to-scikit-learn-a-new-exciting-workflow-e88e2271ef62
-# y = pulsar_data.pop('target_class').values
-
-pulsar = get_pulsar_data()
-
-# http://chrisstrelioff.ws/sandbox/2015/06/08/decision_trees_in_python_with_scikit_learn_and_pandas.html
-features = list(pulsar.columns.values)
-features.remove("target_class")
-
-y = pulsar["target_class"]
-x = pulsar[features]
-
-x_train, x_test, y_train, y_test = train_test_split(x, y, stratify=y, test_size=0.20, random_state=99)
-
-min_sample_list = list(range(2,5))
-tuned_parameters = [{'min_samples_split': min_sample_list}]
-
-clf = get_optimized_classifier(
-    estimator=DecisionTreeClassifier(random_state=99),
-    tuned_parameters=tuned_parameters,
-    x_train=x_train,
-    y_train=y_train
-    )
-
-best_min_samples = clf.best_params_['min_samples_split']
-optimized_clf = DecisionTreeClassifier(min_samples_split=best_min_samples, random_state=99)
-
-plot_learning_curve(
-    optimized_clf,
-    title='Decision Tree Learning Curve',
-    file_name="decision_tree_learning_curve.png",
-    X=x_train,
-    y=y_train,
-    ylim=None,
-    cv=5,
-    n_jobs=None,
-    scoring="f1",
-    train_sizes=np.linspace(.1, 1.0, 5)
-    )
-
-optimized_clf.fit(x_train, y_train)
-y_pred = optimized_clf.predict(x_test)
-
-compute_stats(y_test, y_pred)
-
-sys.stdout = sys.__stdout__
-print ("Finished!")

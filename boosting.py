@@ -1,0 +1,93 @@
+import numpy as np
+# Thanks to Scikit-learn
+# Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
+from sklearn.ensemble import GradientBoostingClassifier
+from utils import get_hmeq_data, get_pulsar_data, compute_stats, plot_learning_curve, get_optimized_classifier
+import sys
+import warnings
+warnings.filterwarnings('ignore')
+
+def run_boosting(name, x_train, x_test, y_train, y_test, min_sample_list, scoring):
+    print ("Working on {} data".format(name))
+
+    img_name = "images/{}_boosting_learning_curve.png".format(name)
+    img_title = '{} Boosting Learning Curve'.format(name)
+    report_name = "reports/{}_boosting_output.txt".format(name)
+    
+    # print (np.linspace(0.1, 0.5, 2))
+
+    sys.stdout = open(report_name, "w")
+
+    # tuned_parameters = [{'n_neighbors': min_sample_list}]
+
+    # tuned_parameters = [{
+    #     'n_estimators': 500,
+    #     'max_depth': 4,
+    #     'min_samples_split': 2,
+    #     'learning_rate': 0.01,
+    #     'loss': 'ls'
+    #     }]
+
+    tuned_parameters = {
+        "loss":["deviance"],
+        # "learning_rate": [0.01, 0.025, 0.05, 0.075, 0.1, 0.15, 0.2],
+        "learning_rate": [0.1],
+        "min_samples_split": np.linspace(0.1, 0.5, 2),
+        # "min_samples_split": np.linspace(0.1, 0.5, 12),
+        "min_samples_leaf": np.linspace(0.1, 0.5, 2),
+        # "min_samples_leaf": np.linspace(0.1, 0.5, 12),
+        "max_depth":[3],
+        # "max_depth":[3,5,8],
+        "max_features":["log2","sqrt"],
+        "criterion": ["friedman_mse",  "mae"],
+        "subsample":[0.5, 1.0],
+        # "subsample":[0.5, 0.618, 0.8, 0.85, 0.9, 0.95, 1.0],
+        "n_estimators":[100]
+    }
+
+    clf = get_optimized_classifier(
+        estimator=GradientBoostingClassifier(random_state=99),
+        tuned_parameters=tuned_parameters,
+        x_train=x_train,
+        y_train=y_train
+        )
+
+    print ("here")
+    best_params = clf.best_params_
+    print (best_params)
+    optimized_clf = GradientBoostingClassifier(**best_params, random_state=99)
+
+    plot_learning_curve(
+        optimized_clf,
+        title=img_title,
+        file_name=img_name,
+        X=x_train,
+        y=y_train,
+        scoring=scoring,
+        )
+
+    optimized_clf.fit(x_train, y_train)
+    y_pred = optimized_clf.predict(x_test)
+
+    compute_stats(y_test, y_pred)
+
+    sys.stdout = sys.__stdout__
+    print ("Finished {} boosting!".format(name))
+
+def run_pulsar_dt():
+    x_train, x_test, y_train, y_test = get_pulsar_data()
+    min_sample_list = list(range(1,20))
+    run_boosting("pulsar", x_train, x_test, y_train, y_test, min_sample_list, scoring="f1")
+
+def run_hmeq_dt():
+    x_train, x_test, y_train, y_test = get_hmeq_data()
+    min_sample_list = list(range(1,20))
+    run_boosting("hmeq", x_train, x_test, y_train, y_test, min_sample_list, scoring="f1")
+
+print ("Running Boosting Code, this should take a minute or two")
+
+run_pulsar_dt()
+# run_hmeq_dt()
+
+print ("Finished Running Boosting")
+

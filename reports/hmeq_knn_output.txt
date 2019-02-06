@@ -1,0 +1,62 @@
+Best parameters set found on development set:
+
+{'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.1, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 0.5}
+
+Grid scores on development set:
+
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.1, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.1, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.1, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.1, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.5, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.5, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.5, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.5, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.1, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.1, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.1, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.1, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.5, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.5, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.5, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'friedman_mse', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.5, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.1, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.1, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.1, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.1, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.5, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.5, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.5, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'log2', 'min_samples_leaf': 0.5, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.1, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.1, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.1, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.1, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.5, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.5, 'min_samples_split': 0.1, 'n_estimators': 10, 'subsample': 1.0}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.5, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 0.5}
+0.000 (+/-0.000) for {'criterion': 'mae', 'learning_rate': 0.01, 'loss': 'deviance', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 0.5, 'min_samples_split': 0.5, 'n_estimators': 10, 'subsample': 1.0}
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+here
+Final Performance on Test Set
+MSE: 0.19966442953020133
+
+Accuracy Score: 80.03355704697987%
+
+F1 Score: 0.0
+
+              precision    recall  f1-score   support
+
+           0       0.80      1.00      0.89       477
+           1       0.00      0.00      0.00       119
+
+   micro avg       0.80      0.80      0.80       596
+   macro avg       0.40      0.50      0.44       596
+weighted avg       0.64      0.80      0.71       596
+
+
