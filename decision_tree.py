@@ -5,7 +5,7 @@ from sklearn.tree import DecisionTreeClassifier
 from utils import get_hmeq_data, get_pulsar_data, compute_stats, plot_learning_curve, get_optimized_classifier
 import sys
 
-def run_dt(name, x_train, x_test, y_train, y_test, min_sample_list, scoring):
+def run_dt(name, x_train, x_test, y_train, y_test):
     print ("Working on {} data".format(name))
 
     img_name = "images/{}_decision_tree_learning_curve.png".format(name)
@@ -14,7 +14,7 @@ def run_dt(name, x_train, x_test, y_train, y_test, min_sample_list, scoring):
 
     sys.stdout = open(report_name, "w")
 
-    tuned_parameters = [{'min_samples_split': min_sample_list}]
+    tuned_parameters = [{'min_samples_split': list(range(2,100))}]
 
     clf = get_optimized_classifier(
         estimator=DecisionTreeClassifier(random_state=99),
@@ -32,7 +32,6 @@ def run_dt(name, x_train, x_test, y_train, y_test, min_sample_list, scoring):
         file_name=img_name,
         X=x_train,
         y=y_train,
-        scoring=scoring,
         )
 
     optimized_clf.fit(x_train, y_train)
@@ -45,13 +44,11 @@ def run_dt(name, x_train, x_test, y_train, y_test, min_sample_list, scoring):
 
 def run_pulsar_dt():
     x_train, x_test, y_train, y_test = get_pulsar_data()
-    min_sample_list = list(range(2,100))
-    run_dt("pulsar", x_train, x_test, y_train, y_test, min_sample_list, scoring="f1")
+    run_dt("pulsar", x_train, x_test, y_train, y_test)
 
 def run_hmeq_dt():
     x_train, x_test, y_train, y_test = get_hmeq_data()
-    min_sample_list = list(range(2,100))
-    run_dt("hmeq", x_train, x_test, y_train, y_test, min_sample_list, scoring="f1")
+    run_dt("hmeq", x_train, x_test, y_train, y_test)
 
 print ("Running Decision Tree Code, this should take a minute or two")
 

@@ -64,7 +64,7 @@ def get_hmeq_data():
 # Thanks to this link for some wonderful examples
 # https://scikit-learn.org/stable/auto_examples/model_selection/plot_grid_search_digits.html
 def get_optimized_classifier(estimator, tuned_parameters, x_train, y_train, cv=5, scoring="f1"):
-    clf = GridSearchCV(estimator=estimator, param_grid=tuned_parameters, cv=cv, scoring=scoring)
+    clf = GridSearchCV(estimator=estimator, param_grid=tuned_parameters, cv=cv, scoring=scoring, n_jobs=-1)
     clf.fit(x_train, y_train)
 
     print("Best parameters set found on development set:")
@@ -108,7 +108,7 @@ def compute_stats(y_true, y_pred):
 # This code was taken from the following link
 # https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html
 def plot_learning_curve(estimator, title, X, y, ylim=None, cv=5,
-                        n_jobs=-1, scoring=None, train_sizes=np.linspace(.1, 1.0, 8), file_name="temp.png"):
+                        n_jobs=-1, scoring="f1", train_sizes=np.linspace(.1, 1.0, 8), file_name="temp.png"):
     """
     Generate a simple plot of the test and training learning curve.
 

@@ -1,0 +1,43 @@
+Best parameters set found on development set:
+
+{'C': 10, 'gamma': 0.001}
+
+Grid scores on development set:
+
+0.698 (+/-0.028) for {'C': 0.01, 'gamma': 0.001}
+0.000 (+/-0.000) for {'C': 0.01, 'gamma': 0.01}
+0.000 (+/-0.000) for {'C': 0.01, 'gamma': 0.1}
+0.830 (+/-0.031) for {'C': 0.1, 'gamma': 0.001}
+0.502 (+/-0.047) for {'C': 0.1, 'gamma': 0.01}
+0.000 (+/-0.000) for {'C': 0.1, 'gamma': 0.1}
+0.844 (+/-0.031) for {'C': 1, 'gamma': 0.001}
+0.816 (+/-0.037) for {'C': 1, 'gamma': 0.01}
+0.085 (+/-0.035) for {'C': 1, 'gamma': 0.1}
+0.865 (+/-0.026) for {'C': 10, 'gamma': 0.001}
+0.819 (+/-0.030) for {'C': 10, 'gamma': 0.01}
+0.210 (+/-0.056) for {'C': 10, 'gamma': 0.1}
+
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+here
+{'C': 10, 'gamma': 0.001}
+Final Performance on Test Set
+MSE: 0.016201117318435754
+
+Accuracy Score: 98.37988826815642%
+
+F1 Score: 0.9073482428115015
+
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      1626
+           1       0.95      0.87      0.91       164
+
+   micro avg       0.98      0.98      0.98      1790
+   macro avg       0.97      0.93      0.95      1790
+weighted avg       0.98      0.98      0.98      1790
+
+

@@ -7,7 +7,7 @@ import sys
 import warnings
 warnings.filterwarnings('ignore')
 
-def run_boosting(name, x_train, x_test, y_train, y_test, min_sample_list, scoring):
+def run_boosting(name, x_train, x_test, y_train, y_test):
     print ("Working on {} data".format(name))
 
     img_name = "images/{}_boosting_learning_curve.png".format(name)
@@ -40,7 +40,6 @@ def run_boosting(name, x_train, x_test, y_train, y_test, min_sample_list, scorin
         file_name=img_name,
         X=x_train,
         y=y_train,
-        scoring=scoring,
         )
 
     optimized_clf.fit(x_train, y_train)
@@ -51,20 +50,18 @@ def run_boosting(name, x_train, x_test, y_train, y_test, min_sample_list, scorin
     sys.stdout = sys.__stdout__
     print ("Finished {} boosting!".format(name))
 
-def run_pulsar_dt():
+def run_pulsar_boosting():
     x_train, x_test, y_train, y_test = get_pulsar_data()
-    min_sample_list = list(range(1,20))
-    run_boosting("pulsar", x_train, x_test, y_train, y_test, min_sample_list, scoring="f1")
+    run_boosting("pulsar", x_train, x_test, y_train, y_test)
 
-def run_hmeq_dt():
+def run_hmeq_boosting():
     x_train, x_test, y_train, y_test = get_hmeq_data()
-    min_sample_list = list(range(1,20))
-    run_boosting("hmeq", x_train, x_test, y_train, y_test, min_sample_list, scoring="f1")
+    run_boosting("hmeq", x_train, x_test, y_train, y_test)
 
 print ("Running Boosting Code, this should take a minute or two")
 
-run_pulsar_dt()
-run_hmeq_dt()
+run_pulsar_boosting()
+run_hmeq_boosting()
 
 print ("Finished Running Boosting")
 
