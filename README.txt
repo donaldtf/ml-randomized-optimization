@@ -59,7 +59,7 @@ Alternatively, if you would like to run all of the algorithms in bulk you can si
 
 `python run_all.py`
 
-Note: Running all of the algorithms at once may take several minutes (5 - 10 minutes, depending on your machine) to complete.
+Note: Running all of the algorithms at once may take several minutes (3 - 5 minutes, depending on your machine) to complete.
 
 
 

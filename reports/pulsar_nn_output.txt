@@ -1,74 +1,53 @@
 Best parameters set found on development set:
 
-{'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
+{'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 99}
 
 Grid scores on development set:
 
-0.853 (+/-0.042) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 0}
-0.857 (+/-0.036) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 1}
-0.855 (+/-0.037) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 0}
-0.862 (+/-0.030) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 1}
-0.863 (+/-0.023) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
-0.861 (+/-0.022) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 1}
-0.849 (+/-0.031) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 0}
-0.857 (+/-0.031) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 1}
-0.856 (+/-0.026) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 0}
-0.853 (+/-0.025) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 1}
-0.857 (+/-0.039) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 0}
-0.863 (+/-0.031) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 1}
-0.859 (+/-0.036) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 0}
-0.864 (+/-0.033) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 1}
-0.869 (+/-0.022) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
-0.864 (+/-0.027) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 1}
-0.858 (+/-0.029) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 0}
-0.855 (+/-0.018) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 1}
-0.862 (+/-0.025) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 0}
-0.859 (+/-0.032) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 1}
-0.850 (+/-0.053) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 0}
-0.867 (+/-0.036) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 1}
-0.864 (+/-0.032) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 0}
-0.861 (+/-0.027) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 1}
-0.870 (+/-0.027) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
-0.864 (+/-0.037) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 1}
-0.856 (+/-0.031) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 0}
-0.858 (+/-0.026) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 1}
-0.860 (+/-0.026) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 0}
-0.860 (+/-0.032) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 1}
-0.850 (+/-0.054) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 0}
-0.868 (+/-0.036) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 1}
-0.863 (+/-0.028) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 0}
-0.862 (+/-0.027) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 1}
-0.871 (+/-0.027) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
-0.859 (+/-0.033) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 1}
-0.856 (+/-0.030) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 0}
-0.853 (+/-0.027) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 1}
-0.862 (+/-0.026) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 0}
-0.859 (+/-0.030) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 1}
+0.847 (+/-0.011) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 99}
+0.862 (+/-0.031) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 99}
+0.857 (+/-0.039) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 99}
+0.848 (+/-0.022) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 99}
+0.854 (+/-0.030) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 99}
+0.853 (+/-0.027) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 99}
+0.864 (+/-0.026) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 99}
+0.854 (+/-0.038) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 99}
+0.847 (+/-0.029) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 99}
+0.860 (+/-0.028) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 99}
+0.853 (+/-0.027) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 99}
+0.866 (+/-0.030) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 99}
+0.856 (+/-0.032) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 99}
+0.848 (+/-0.028) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 99}
+0.860 (+/-0.027) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 99}
+0.853 (+/-0.026) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 99}
+0.866 (+/-0.030) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 99}
+0.858 (+/-0.032) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 99}
+0.847 (+/-0.025) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 99}
+0.860 (+/-0.027) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 99}
 
 Detailed classification report:
 
 The model is trained on the full development set.
 The scores are computed on the full evaluation set.
 
+Train Time:  1.7677898979999895
 
-Train Time:  3.5083427659999984
-
-Test Time:  0.0006778119999921728
+Test Time:  0.0007267949999913981
 
 Final Performance on Test Set
-MSE: 0.017877094972067038
+MSE: 0.020670391061452513
 
-Accuracy Score: 98.2122905027933%
+Accuracy Score: 97.93296089385476%
 
-F1 Score: 0.8980891719745222
+F1 Score: 0.8861538461538462
 
               precision    recall  f1-score   support
 
            0       0.99      0.99      0.99      1626
-           1       0.94      0.86      0.90       164
+           1       0.89      0.88      0.89       164
 
    micro avg       0.98      0.98      0.98      1790
-   macro avg       0.96      0.93      0.94      1790
+   macro avg       0.94      0.93      0.94      1790
 weighted avg       0.98      0.98      0.98      1790
 
 

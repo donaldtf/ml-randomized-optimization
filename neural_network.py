@@ -4,7 +4,6 @@ import numpy as np
 from sklearn.neural_network import MLPClassifier
 from utils import get_hmeq_data, get_pulsar_data, run_optimized, plot_learning_curve, get_optimized_classifier, plot_iteration_curve
 import sys
-import timeit
 
 # Thanks to this source for showing grid search with a neural net
 # https://www.kaggle.com/hatone/mlpclassifier-with-gridsearchcv
@@ -55,7 +54,7 @@ def run_pulsar_nn():
         'max_iter': [1000],
         'alpha': 10.0 ** -np.arange(1, 5),
         'hidden_layer_sizes':np.arange(10, 15),
-        'random_state':[0,1]
+        'random_state':[99]
         }
 
     x_train, x_test, y_train, y_test = get_pulsar_data()
@@ -66,7 +65,7 @@ def run_hmeq_nn():
         'max_iter': [500, 1000],
         'alpha': 10.0 ** -np.arange(1, 5),
         'hidden_layer_sizes':np.arange(10, 15),
-        'random_state':[0,1]
+        'random_state':[99]
         }
 
     x_train, x_test, y_train, y_test = get_hmeq_data()
@@ -75,7 +74,7 @@ def run_hmeq_nn():
 if __name__ == "__main__":
     print ("Running Neural Net Code, this should take a minute or two")
 
-    # run_pulsar_nn()
+    run_pulsar_nn()
     run_hmeq_nn()
 
     print ("Finished Running Neural Net")

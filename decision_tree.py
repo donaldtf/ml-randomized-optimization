@@ -1,10 +1,8 @@
-import numpy as np
 # Thanks to Scikit-learn
 # Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
 from sklearn.tree import DecisionTreeClassifier
 from utils import get_hmeq_data, get_pulsar_data, run_optimized, plot_learning_curve, get_optimized_classifier
 import sys
-import timeit
 
 def run_dt(name, x_train, x_test, y_train, y_test):
     print ("Working on {} data...".format(name))

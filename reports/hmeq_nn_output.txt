@@ -1,113 +1,73 @@
 Best parameters set found on development set:
 
-{'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 1}
+{'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 99}
 
 Grid scores on development set:
 
-0.173 (+/-0.300) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 0}
-0.268 (+/-0.196) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 1}
-0.173 (+/-0.300) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 0}
-0.268 (+/-0.196) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 1}
-0.275 (+/-0.078) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 0}
-0.236 (+/-0.035) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 1}
-0.275 (+/-0.078) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 0}
-0.236 (+/-0.035) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 1}
-0.210 (+/-0.051) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 0}
-0.229 (+/-0.089) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 1}
-0.210 (+/-0.051) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
-0.229 (+/-0.089) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 1}
-0.208 (+/-0.157) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 0}
-0.241 (+/-0.153) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 1}
-0.208 (+/-0.157) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 0}
-0.241 (+/-0.153) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 1}
-0.288 (+/-0.193) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 0}
-0.292 (+/-0.129) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 1}
-0.288 (+/-0.193) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 0}
-0.292 (+/-0.129) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 1}
-0.225 (+/-0.203) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 0}
-0.332 (+/-0.312) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 1}
-0.225 (+/-0.203) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 0}
-0.332 (+/-0.312) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 1}
-0.279 (+/-0.080) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 0}
-0.241 (+/-0.038) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 1}
-0.279 (+/-0.080) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 0}
-0.241 (+/-0.038) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 1}
-0.211 (+/-0.053) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 0}
-0.177 (+/-0.086) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 1}
-0.211 (+/-0.053) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
-0.177 (+/-0.086) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 1}
-0.312 (+/-0.283) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 0}
-0.339 (+/-0.205) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 1}
-0.312 (+/-0.283) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 0}
-0.339 (+/-0.205) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 1}
-0.200 (+/-0.153) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 0}
-0.231 (+/-0.104) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 1}
-0.200 (+/-0.153) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 0}
-0.231 (+/-0.104) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 1}
-0.331 (+/-0.141) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 0}
-0.443 (+/-0.357) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 1}
-0.331 (+/-0.141) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 0}
-0.443 (+/-0.357) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 1}
-0.276 (+/-0.072) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 0}
-0.241 (+/-0.039) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 1}
-0.276 (+/-0.072) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 0}
-0.241 (+/-0.039) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 1}
-0.208 (+/-0.058) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 0}
-0.210 (+/-0.175) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 1}
-0.208 (+/-0.058) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
-0.210 (+/-0.175) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 1}
-0.183 (+/-0.092) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 0}
-0.310 (+/-0.219) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 1}
-0.183 (+/-0.092) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 0}
-0.310 (+/-0.219) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 1}
-0.241 (+/-0.310) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 0}
-0.264 (+/-0.140) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 1}
-0.241 (+/-0.310) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 0}
-0.264 (+/-0.140) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 1}
-0.176 (+/-0.366) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 0}
-0.269 (+/-0.281) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 1}
-0.176 (+/-0.366) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 0}
-0.269 (+/-0.281) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 1}
-0.275 (+/-0.078) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 0}
-0.230 (+/-0.029) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 1}
-0.275 (+/-0.078) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 0}
-0.230 (+/-0.029) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 1}
-0.212 (+/-0.048) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 0}
-0.276 (+/-0.184) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 1}
-0.212 (+/-0.048) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
-0.276 (+/-0.184) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 1}
-0.221 (+/-0.178) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 0}
-0.313 (+/-0.219) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 1}
-0.221 (+/-0.178) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 0}
-0.313 (+/-0.219) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 1}
-0.285 (+/-0.314) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 0}
-0.292 (+/-0.170) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 1}
-0.285 (+/-0.314) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 0}
-0.292 (+/-0.170) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 1}
+0.257 (+/-0.065) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 99}
+0.257 (+/-0.065) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 99}
+0.241 (+/-0.180) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 99}
+0.241 (+/-0.180) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 99}
+0.256 (+/-0.129) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 99}
+0.256 (+/-0.129) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 99}
+0.289 (+/-0.050) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 99}
+0.289 (+/-0.050) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 99}
+0.194 (+/-0.157) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 99}
+0.194 (+/-0.157) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 99}
+0.262 (+/-0.046) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 99}
+0.262 (+/-0.046) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 99}
+0.298 (+/-0.238) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 99}
+0.298 (+/-0.238) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 99}
+0.292 (+/-0.115) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 99}
+0.292 (+/-0.115) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 99}
+0.218 (+/-0.110) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 99}
+0.218 (+/-0.110) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 99}
+0.204 (+/-0.122) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 99}
+0.204 (+/-0.122) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 99}
+0.259 (+/-0.089) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 99}
+0.259 (+/-0.089) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 99}
+0.353 (+/-0.278) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 99}
+0.353 (+/-0.278) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 99}
+0.226 (+/-0.154) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 99}
+0.226 (+/-0.154) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 99}
+0.217 (+/-0.111) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 99}
+0.217 (+/-0.111) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 99}
+0.247 (+/-0.139) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 99}
+0.247 (+/-0.139) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 99}
+0.273 (+/-0.062) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 99}
+0.273 (+/-0.062) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 99}
+0.295 (+/-0.176) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 99}
+0.295 (+/-0.176) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 99}
+0.221 (+/-0.145) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 99}
+0.221 (+/-0.145) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 99}
+0.217 (+/-0.111) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 99}
+0.217 (+/-0.111) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 99}
+0.216 (+/-0.146) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 99}
+0.216 (+/-0.146) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 99}
 
 Detailed classification report:
 
 The model is trained on the full development set.
 The scores are computed on the full evaluation set.
 
-Train Time:  0.22684253299999924
+Train Time:  0.3634464850000114
 
-Test Time:  0.0013722310000012783
+Test Time:  0.011044018999996297
 
 Final Performance on Test Set
-MSE: 0.19798657718120805
+MSE: 0.18624161073825504
 
-Accuracy Score: 80.20134228187919%
+Accuracy Score: 81.3758389261745%
 
-F1 Score: 0.14492753623188406
+F1 Score: 0.18978102189781024
 
               precision    recall  f1-score   support
 
-           0       0.81      0.98      0.89       477
-           1       0.53      0.08      0.14       119
+           0       0.82      0.99      0.89       477
+           1       0.72      0.11      0.19       119
 
-   micro avg       0.80      0.80      0.80       596
-   macro avg       0.67      0.53      0.52       596
-weighted avg       0.75      0.80      0.74       596
+   micro avg       0.81      0.81      0.81       596
+   macro avg       0.77      0.55      0.54       596
+weighted avg       0.80      0.81      0.75       596
 
 
