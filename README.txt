@@ -17,7 +17,8 @@ This repo contains all the code needed to reproduce my results, including the da
 /iteration_curves - this holds the iteration_curves for the algorithms that have an iterative component
 /reports - while running each algorithm, I feed the standard output into a report file here instead of to the console.
            This file holds stats on grid search results, test data performance and wall clock times
-/utils.py - this is a utility file that holds shared functionality between the algorithms (loading and prepping data, generating learning curves, etc)
+/utils.py - this is a utility file that holds shared functionality between the algorithms 
+            (loading and prepping data, generating learning curves, etc)
 
 
 ### Install Dependencies ###
