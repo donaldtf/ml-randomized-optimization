@@ -90,3 +90,24 @@ Detailed classification report:
 The model is trained on the full development set.
 The scores are computed on the full evaluation set.
 
+Train Time:  0.22684253299999924
+
+Test Time:  0.0013722310000012783
+
+Final Performance on Test Set
+MSE: 0.19798657718120805
+
+Accuracy Score: 80.20134228187919%
+
+F1 Score: 0.14492753623188406
+
+              precision    recall  f1-score   support
+
+           0       0.81      0.98      0.89       477
+           1       0.53      0.08      0.14       119
+
+   micro avg       0.80      0.80      0.80       596
+   macro avg       0.67      0.53      0.52       596
+weighted avg       0.75      0.80      0.74       596
+
+

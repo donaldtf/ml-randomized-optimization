@@ -2,13 +2,12 @@ import numpy as np
 # Thanks to Scikit-learn
 # Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
 from sklearn.ensemble import GradientBoostingClassifier
-from utils import get_hmeq_data, get_pulsar_data, compute_stats, plot_learning_curve, get_optimized_classifier, plot_iteration_curve
+from utils import get_hmeq_data, get_pulsar_data, run_optimized, plot_learning_curve, get_optimized_classifier, plot_iteration_curve
 import sys
-import warnings
-warnings.filterwarnings('ignore')
+import timeit
 
 def run_boosting(name, x_train, x_test, y_train, y_test):
-    print ("Working on {} data".format(name))
+    print ("Working on {} data...".format(name))
 
     img_name = "images/{}_boosting_learning_curve.png".format(name)
     iter_name = "iteration_curves/{}_boosting.png".format(name)
@@ -41,15 +40,13 @@ def run_boosting(name, x_train, x_test, y_train, y_test):
         y=y_train,
         )
 
-    optimized_clf.fit(x_train, y_train)
-    y_pred = optimized_clf.predict(x_test)
+    run_optimized(optimized_clf, x_train, y_train, x_test, y_test)
 
     plot_iteration_curve(optimized_clf, iter_name, x_test, y_test)
 
-    compute_stats(y_test, y_pred)
-
     sys.stdout = sys.__stdout__
     print ("Finished {} boosting!".format(name))
+    print()
 
 def run_pulsar_boosting():
     x_train, x_test, y_train, y_test = get_pulsar_data()

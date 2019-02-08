@@ -9,6 +9,7 @@ from sklearn.model_selection import train_test_split, learning_curve, GridSearch
 from sklearn.impute import SimpleImputer
 from sklearn.metrics import mean_squared_error, accuracy_score, f1_score, classification_report, recall_score
 from sklearn import ensemble
+import timeit
 
 # Thanks to these sources for examples on loading data in pandas
 # https://medium.com/dunder-data/from-pandas-to-scikit-learn-a-new-exciting-workflow-e88e2271ef62
@@ -42,13 +43,6 @@ def get_hmeq_data():
     for column in text_features:
         temp, not_needed  = pd.factorize(hmeq[column])
         hmeq[column] = temp
-
-    # print ("Imputing hmeq Data...")
-    # hmeq[hmeq.isnull()] = 0
-    # print (len(hmeq))
-    # hmeq = hmeq.dropna()
-    # print (len(hmeq))
-    print (hmeq['BAD'].value_counts())
 
     y = hmeq[target]
     x = hmeq[features]
@@ -210,3 +204,20 @@ def plot_iteration_curve(clf, file_name,  x_test, y_test):
     plt.title('Test Error With Number of Trees')
 
     plt.savefig(file_name)
+
+def run_optimized(optimized_clf, x_train, y_train, x_test, y_test):
+    train_start = timeit.default_timer()
+    optimized_clf.fit(x_train, y_train)
+    train_stop = timeit.default_timer()
+
+    print('Train Time: ', train_stop - train_start)  
+    print()
+
+    test_start = timeit.default_timer()
+    y_pred = optimized_clf.predict(x_test)
+    test_stop = timeit.default_timer()
+
+    print('Test Time: ', test_stop - test_start)  
+    print()
+
+    compute_stats(y_test, y_pred)

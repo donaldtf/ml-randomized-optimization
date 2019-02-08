@@ -59,19 +59,9 @@ Alternatively, if you would like to run all of the algorithms in bulk you can si
 
 `python run_all.py`
 
-Note: Running all of the algorithms at once may take several minutes to complete
+Note: Running all of the algorithms at once may take several minutes (5 - 10 minutes, depending on your machine) to complete.
 
 
 
 @ Todo delete this before submitting, also try cloning the repo and running everything one last time
-Install Miniconda
-https://conda.io/miniconda.html
-
-To activate the enviornment needed run:
-
-source activate ml_assignment_1
-
-# Install Dependencies
-conda install scikit-learn
-conda install pandas
-conda install matplotlib
+To activate the environment needed run: source activate ml_assignment_1
