@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
 from sklearn.model_selection import train_test_split, learning_curve, GridSearchCV
 from sklearn.impute import SimpleImputer
-from sklearn.metrics import mean_squared_error, accuracy_score, f1_score, classification_report
+from sklearn.metrics import mean_squared_error, accuracy_score, f1_score, classification_report, recall_score
 from sklearn import ensemble
 
 # Thanks to these sources for examples on loading data in pandas
@@ -54,7 +54,7 @@ def get_hmeq_data():
     x = hmeq[features]
 
     # https://scikit-learn.org/stable/modules/impute.html
-    imp = SimpleImputer(strategy="most_frequent")
+    imp = SimpleImputer(strategy="constant", fill_value=-1)
     x = pd.DataFrame(imp.fit_transform(x))
 
     x_train, x_test, y_train, y_test = train_test_split(x, y, stratify=y, test_size=0.10, random_state=99)
@@ -187,5 +187,26 @@ def plot_learning_curve(estimator, title, X, y, ylim=None, cv=5,
              label="Cross-validation score")
 
     plt.legend(loc="best")
+
+    plt.savefig(file_name)
+
+# Thanks to Winnie Yeung for posting this in Piazza 
+# https://piazza.com/class/jql7qq4dehu3c?cid=253
+def plot_iteration_curve(clf, file_name,  x_test, y_test):
+    plt.figure()
+    real_test_errors = []
+
+    for real_test_predict in clf.staged_predict(x_test):
+        real_test_errors.append(1. - recall_score(real_test_predict, y_test))
+
+    n_trees_discrete = len(clf)
+
+    plt.figure()
+    plt.plot(range(1, n_trees_discrete + 1),
+            real_test_errors, c='blue', label='SAMME')
+    plt.legend()
+    plt.ylabel('Test Error')
+    plt.xlabel('Number of Trees')
+    plt.title('Test Error With Number of Trees')
 
     plt.savefig(file_name)

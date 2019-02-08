@@ -50,10 +50,11 @@ def run_hmeq_dt():
     x_train, x_test, y_train, y_test = get_hmeq_data()
     run_dt("hmeq", x_train, x_test, y_train, y_test)
 
-print ("Running Decision Tree Code, this should take a minute or two")
+if __name__ == "__main__":
+    print ("Running Decision Tree Code, this should take a minute or two")
 
-run_pulsar_dt()
-run_hmeq_dt()
+    run_pulsar_dt()
+    run_hmeq_dt()
 
-print ("Finished Running Decision Tree")
+    print ("Finished Running Decision Tree")
 

@@ -13,16 +13,6 @@ Grid scores on development set:
 0.839 (+/-0.023) for {'n_neighbors': 7}
 0.835 (+/-0.018) for {'n_neighbors': 8}
 0.841 (+/-0.019) for {'n_neighbors': 9}
-0.833 (+/-0.019) for {'n_neighbors': 10}
-0.840 (+/-0.016) for {'n_neighbors': 11}
-0.836 (+/-0.022) for {'n_neighbors': 12}
-0.837 (+/-0.016) for {'n_neighbors': 13}
-0.836 (+/-0.017) for {'n_neighbors': 14}
-0.837 (+/-0.017) for {'n_neighbors': 15}
-0.837 (+/-0.017) for {'n_neighbors': 16}
-0.840 (+/-0.019) for {'n_neighbors': 17}
-0.838 (+/-0.020) for {'n_neighbors': 18}
-0.837 (+/-0.019) for {'n_neighbors': 19}
 
 Detailed classification report:
 

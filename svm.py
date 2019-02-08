@@ -45,7 +45,7 @@ def run_svm(name, x_train, x_test, y_train, y_test, tuned_parameters):
 def run_pulsar_svm():
     tuned_parameters = {
         "C": [0.1, 1, 10],
-        'gamma': [0.001, 0.01, 0.1]
+        'gamma': [0.0001, 0.001, 0.01]
     }
 
     x_train, x_test, y_train, y_test = get_pulsar_data()
@@ -60,10 +60,11 @@ def run_hmeq_svm():
     x_train, x_test, y_train, y_test = get_hmeq_data()
     run_svm("hmeq", x_train, x_test, y_train, y_test, tuned_parameters)
 
-print ("Running SVM Code, this should take a minute or two")
+if __name__ == "__main__":
+    print ("Running SVM Code, this should take a minute or two")
 
-# run_pulsar_svm()
-run_hmeq_svm()
+    run_pulsar_svm()
+    run_hmeq_svm()
 
-print ("Finished Running SVM")
+    print ("Finished Running SVM")
 

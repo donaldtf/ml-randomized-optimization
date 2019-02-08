@@ -51,20 +51,15 @@ def run_pulsar_knn():
 
 def run_hmeq_knn():
     x_train, x_test, y_train, y_test = get_hmeq_data()
-    tuned_parameters = [{
-        'n_neighbors': list(range(1,10)),
-        # "p": [1, 2, 3],
-        # "weights": ["uniform", "distance"],
-        # "metric": ["minkowski", "euclidean", "manhattan", "chebyshev"],
-        # "algorithm" : ["auto", "ball_tree", "kd_tree"],
-        # "leaf_size": [10, 20, 30, 40]
-        }]
+    tuned_parameters = [{'n_neighbors': list(range(1,10))}]
     run_knn("hmeq", x_train, x_test, y_train, y_test, tuned_parameters)
 
-print ("Running kNN Code, this should take a minute or two")
 
-# run_pulsar_knn()
-run_hmeq_knn()
+if __name__ == "__main__":
+    print ("Running kNN Code, this should take a minute or two")
 
-print ("Finished Running kNN")
+    run_pulsar_knn()
+    run_hmeq_knn()
+
+    print ("Finished Running kNN")
 

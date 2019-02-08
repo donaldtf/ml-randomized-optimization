@@ -1,209 +1,92 @@
 Best parameters set found on development set:
 
-{'alpha': 0.001, 'hidden_layer_sizes': 13, 'random_state': 1}
+{'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 1}
 
 Grid scores on development set:
 
-0.240 (+/-0.050) for {'alpha': 0.1, 'hidden_layer_sizes': 5, 'random_state': 0}
-0.017 (+/-0.014) for {'alpha': 0.1, 'hidden_layer_sizes': 5, 'random_state': 1}
-0.188 (+/-0.242) for {'alpha': 0.1, 'hidden_layer_sizes': 6, 'random_state': 0}
-0.099 (+/-0.149) for {'alpha': 0.1, 'hidden_layer_sizes': 6, 'random_state': 1}
-0.203 (+/-0.106) for {'alpha': 0.1, 'hidden_layer_sizes': 7, 'random_state': 0}
-0.214 (+/-0.052) for {'alpha': 0.1, 'hidden_layer_sizes': 7, 'random_state': 1}
-0.165 (+/-0.042) for {'alpha': 0.1, 'hidden_layer_sizes': 8, 'random_state': 0}
-0.226 (+/-0.090) for {'alpha': 0.1, 'hidden_layer_sizes': 8, 'random_state': 1}
-0.236 (+/-0.081) for {'alpha': 0.1, 'hidden_layer_sizes': 9, 'random_state': 0}
-0.176 (+/-0.026) for {'alpha': 0.1, 'hidden_layer_sizes': 9, 'random_state': 1}
-0.011 (+/-0.034) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'random_state': 0}
-0.219 (+/-0.046) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'random_state': 1}
-0.244 (+/-0.075) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'random_state': 0}
-0.205 (+/-0.059) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'random_state': 1}
-0.240 (+/-0.311) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'random_state': 0}
-0.130 (+/-0.228) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'random_state': 1}
-0.187 (+/-0.245) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'random_state': 0}
-0.314 (+/-0.237) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'random_state': 1}
-0.210 (+/-0.248) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'random_state': 0}
-0.280 (+/-0.337) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'random_state': 1}
-0.240 (+/-0.050) for {'alpha': 0.01, 'hidden_layer_sizes': 5, 'random_state': 0}
-0.017 (+/-0.014) for {'alpha': 0.01, 'hidden_layer_sizes': 5, 'random_state': 1}
-0.251 (+/-0.166) for {'alpha': 0.01, 'hidden_layer_sizes': 6, 'random_state': 0}
-0.140 (+/-0.221) for {'alpha': 0.01, 'hidden_layer_sizes': 6, 'random_state': 1}
-0.204 (+/-0.107) for {'alpha': 0.01, 'hidden_layer_sizes': 7, 'random_state': 0}
-0.214 (+/-0.052) for {'alpha': 0.01, 'hidden_layer_sizes': 7, 'random_state': 1}
-0.165 (+/-0.042) for {'alpha': 0.01, 'hidden_layer_sizes': 8, 'random_state': 0}
-0.239 (+/-0.078) for {'alpha': 0.01, 'hidden_layer_sizes': 8, 'random_state': 1}
-0.236 (+/-0.081) for {'alpha': 0.01, 'hidden_layer_sizes': 9, 'random_state': 0}
-0.176 (+/-0.026) for {'alpha': 0.01, 'hidden_layer_sizes': 9, 'random_state': 1}
-0.007 (+/-0.029) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'random_state': 0}
-0.219 (+/-0.046) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'random_state': 1}
-0.245 (+/-0.073) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'random_state': 0}
-0.213 (+/-0.021) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'random_state': 1}
-0.156 (+/-0.213) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'random_state': 0}
-0.129 (+/-0.245) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'random_state': 1}
-0.133 (+/-0.203) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'random_state': 0}
-0.141 (+/-0.059) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'random_state': 1}
-0.088 (+/-0.102) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'random_state': 0}
-0.227 (+/-0.198) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'random_state': 1}
-0.240 (+/-0.050) for {'alpha': 0.001, 'hidden_layer_sizes': 5, 'random_state': 0}
-0.017 (+/-0.014) for {'alpha': 0.001, 'hidden_layer_sizes': 5, 'random_state': 1}
-0.187 (+/-0.241) for {'alpha': 0.001, 'hidden_layer_sizes': 6, 'random_state': 0}
-0.241 (+/-0.329) for {'alpha': 0.001, 'hidden_layer_sizes': 6, 'random_state': 1}
-0.205 (+/-0.112) for {'alpha': 0.001, 'hidden_layer_sizes': 7, 'random_state': 0}
-0.214 (+/-0.052) for {'alpha': 0.001, 'hidden_layer_sizes': 7, 'random_state': 1}
-0.165 (+/-0.042) for {'alpha': 0.001, 'hidden_layer_sizes': 8, 'random_state': 0}
-0.190 (+/-0.057) for {'alpha': 0.001, 'hidden_layer_sizes': 8, 'random_state': 1}
-0.236 (+/-0.081) for {'alpha': 0.001, 'hidden_layer_sizes': 9, 'random_state': 0}
-0.176 (+/-0.026) for {'alpha': 0.001, 'hidden_layer_sizes': 9, 'random_state': 1}
-0.045 (+/-0.123) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'random_state': 0}
-0.219 (+/-0.046) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'random_state': 1}
-0.249 (+/-0.066) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'random_state': 0}
-0.213 (+/-0.021) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'random_state': 1}
-0.236 (+/-0.319) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'random_state': 0}
-0.130 (+/-0.270) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'random_state': 1}
-0.181 (+/-0.204) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'random_state': 0}
-0.335 (+/-0.237) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'random_state': 1}
-0.172 (+/-0.269) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'random_state': 0}
-0.281 (+/-0.234) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'random_state': 1}
-0.240 (+/-0.050) for {'alpha': 0.0001, 'hidden_layer_sizes': 5, 'random_state': 0}
-0.017 (+/-0.014) for {'alpha': 0.0001, 'hidden_layer_sizes': 5, 'random_state': 1}
-0.187 (+/-0.241) for {'alpha': 0.0001, 'hidden_layer_sizes': 6, 'random_state': 0}
-0.163 (+/-0.303) for {'alpha': 0.0001, 'hidden_layer_sizes': 6, 'random_state': 1}
-0.205 (+/-0.112) for {'alpha': 0.0001, 'hidden_layer_sizes': 7, 'random_state': 0}
-0.214 (+/-0.050) for {'alpha': 0.0001, 'hidden_layer_sizes': 7, 'random_state': 1}
-0.165 (+/-0.042) for {'alpha': 0.0001, 'hidden_layer_sizes': 8, 'random_state': 0}
-0.201 (+/-0.041) for {'alpha': 0.0001, 'hidden_layer_sizes': 8, 'random_state': 1}
-0.236 (+/-0.081) for {'alpha': 0.0001, 'hidden_layer_sizes': 9, 'random_state': 0}
-0.176 (+/-0.026) for {'alpha': 0.0001, 'hidden_layer_sizes': 9, 'random_state': 1}
-0.187 (+/-0.400) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'random_state': 0}
-0.219 (+/-0.046) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'random_state': 1}
-0.247 (+/-0.071) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'random_state': 0}
-0.212 (+/-0.019) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'random_state': 1}
-0.189 (+/-0.172) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'random_state': 0}
-0.129 (+/-0.257) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'random_state': 1}
-0.122 (+/-0.199) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'random_state': 0}
-0.279 (+/-0.360) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'random_state': 1}
-0.132 (+/-0.274) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'random_state': 0}
-0.190 (+/-0.163) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'random_state': 1}
-0.240 (+/-0.050) for {'alpha': 1e-05, 'hidden_layer_sizes': 5, 'random_state': 0}
-0.017 (+/-0.014) for {'alpha': 1e-05, 'hidden_layer_sizes': 5, 'random_state': 1}
-0.187 (+/-0.241) for {'alpha': 1e-05, 'hidden_layer_sizes': 6, 'random_state': 0}
-0.193 (+/-0.290) for {'alpha': 1e-05, 'hidden_layer_sizes': 6, 'random_state': 1}
-0.205 (+/-0.112) for {'alpha': 1e-05, 'hidden_layer_sizes': 7, 'random_state': 0}
-0.215 (+/-0.050) for {'alpha': 1e-05, 'hidden_layer_sizes': 7, 'random_state': 1}
-0.165 (+/-0.042) for {'alpha': 1e-05, 'hidden_layer_sizes': 8, 'random_state': 0}
-0.201 (+/-0.041) for {'alpha': 1e-05, 'hidden_layer_sizes': 8, 'random_state': 1}
-0.236 (+/-0.081) for {'alpha': 1e-05, 'hidden_layer_sizes': 9, 'random_state': 0}
-0.176 (+/-0.026) for {'alpha': 1e-05, 'hidden_layer_sizes': 9, 'random_state': 1}
-0.138 (+/-0.324) for {'alpha': 1e-05, 'hidden_layer_sizes': 10, 'random_state': 0}
-0.219 (+/-0.046) for {'alpha': 1e-05, 'hidden_layer_sizes': 10, 'random_state': 1}
-0.248 (+/-0.067) for {'alpha': 1e-05, 'hidden_layer_sizes': 11, 'random_state': 0}
-0.212 (+/-0.019) for {'alpha': 1e-05, 'hidden_layer_sizes': 11, 'random_state': 1}
-0.211 (+/-0.027) for {'alpha': 1e-05, 'hidden_layer_sizes': 12, 'random_state': 0}
-0.178 (+/-0.246) for {'alpha': 1e-05, 'hidden_layer_sizes': 12, 'random_state': 1}
-0.186 (+/-0.247) for {'alpha': 1e-05, 'hidden_layer_sizes': 13, 'random_state': 0}
-0.263 (+/-0.194) for {'alpha': 1e-05, 'hidden_layer_sizes': 13, 'random_state': 1}
-0.162 (+/-0.307) for {'alpha': 1e-05, 'hidden_layer_sizes': 14, 'random_state': 0}
-0.254 (+/-0.196) for {'alpha': 1e-05, 'hidden_layer_sizes': 14, 'random_state': 1}
-0.240 (+/-0.050) for {'alpha': 1e-06, 'hidden_layer_sizes': 5, 'random_state': 0}
-0.017 (+/-0.014) for {'alpha': 1e-06, 'hidden_layer_sizes': 5, 'random_state': 1}
-0.187 (+/-0.241) for {'alpha': 1e-06, 'hidden_layer_sizes': 6, 'random_state': 0}
-0.240 (+/-0.302) for {'alpha': 1e-06, 'hidden_layer_sizes': 6, 'random_state': 1}
-0.205 (+/-0.112) for {'alpha': 1e-06, 'hidden_layer_sizes': 7, 'random_state': 0}
-0.214 (+/-0.050) for {'alpha': 1e-06, 'hidden_layer_sizes': 7, 'random_state': 1}
-0.165 (+/-0.042) for {'alpha': 1e-06, 'hidden_layer_sizes': 8, 'random_state': 0}
-0.201 (+/-0.041) for {'alpha': 1e-06, 'hidden_layer_sizes': 8, 'random_state': 1}
-0.236 (+/-0.081) for {'alpha': 1e-06, 'hidden_layer_sizes': 9, 'random_state': 0}
-0.176 (+/-0.026) for {'alpha': 1e-06, 'hidden_layer_sizes': 9, 'random_state': 1}
-0.130 (+/-0.353) for {'alpha': 1e-06, 'hidden_layer_sizes': 10, 'random_state': 0}
-0.219 (+/-0.046) for {'alpha': 1e-06, 'hidden_layer_sizes': 10, 'random_state': 1}
-0.247 (+/-0.062) for {'alpha': 1e-06, 'hidden_layer_sizes': 11, 'random_state': 0}
-0.212 (+/-0.019) for {'alpha': 1e-06, 'hidden_layer_sizes': 11, 'random_state': 1}
-0.212 (+/-0.027) for {'alpha': 1e-06, 'hidden_layer_sizes': 12, 'random_state': 0}
-0.180 (+/-0.242) for {'alpha': 1e-06, 'hidden_layer_sizes': 12, 'random_state': 1}
-0.175 (+/-0.249) for {'alpha': 1e-06, 'hidden_layer_sizes': 13, 'random_state': 0}
-0.171 (+/-0.138) for {'alpha': 1e-06, 'hidden_layer_sizes': 13, 'random_state': 1}
-0.055 (+/-0.030) for {'alpha': 1e-06, 'hidden_layer_sizes': 14, 'random_state': 0}
-0.145 (+/-0.040) for {'alpha': 1e-06, 'hidden_layer_sizes': 14, 'random_state': 1}
-0.240 (+/-0.050) for {'alpha': 1e-07, 'hidden_layer_sizes': 5, 'random_state': 0}
-0.017 (+/-0.014) for {'alpha': 1e-07, 'hidden_layer_sizes': 5, 'random_state': 1}
-0.187 (+/-0.241) for {'alpha': 1e-07, 'hidden_layer_sizes': 6, 'random_state': 0}
-0.114 (+/-0.233) for {'alpha': 1e-07, 'hidden_layer_sizes': 6, 'random_state': 1}
-0.205 (+/-0.112) for {'alpha': 1e-07, 'hidden_layer_sizes': 7, 'random_state': 0}
-0.214 (+/-0.050) for {'alpha': 1e-07, 'hidden_layer_sizes': 7, 'random_state': 1}
-0.165 (+/-0.042) for {'alpha': 1e-07, 'hidden_layer_sizes': 8, 'random_state': 0}
-0.201 (+/-0.041) for {'alpha': 1e-07, 'hidden_layer_sizes': 8, 'random_state': 1}
-0.236 (+/-0.081) for {'alpha': 1e-07, 'hidden_layer_sizes': 9, 'random_state': 0}
-0.176 (+/-0.026) for {'alpha': 1e-07, 'hidden_layer_sizes': 9, 'random_state': 1}
-0.003 (+/-0.014) for {'alpha': 1e-07, 'hidden_layer_sizes': 10, 'random_state': 0}
-0.219 (+/-0.046) for {'alpha': 1e-07, 'hidden_layer_sizes': 10, 'random_state': 1}
-0.252 (+/-0.078) for {'alpha': 1e-07, 'hidden_layer_sizes': 11, 'random_state': 0}
-0.212 (+/-0.019) for {'alpha': 1e-07, 'hidden_layer_sizes': 11, 'random_state': 1}
-0.211 (+/-0.027) for {'alpha': 1e-07, 'hidden_layer_sizes': 12, 'random_state': 0}
-0.180 (+/-0.242) for {'alpha': 1e-07, 'hidden_layer_sizes': 12, 'random_state': 1}
-0.205 (+/-0.304) for {'alpha': 1e-07, 'hidden_layer_sizes': 13, 'random_state': 0}
-0.214 (+/-0.211) for {'alpha': 1e-07, 'hidden_layer_sizes': 13, 'random_state': 1}
-0.104 (+/-0.203) for {'alpha': 1e-07, 'hidden_layer_sizes': 14, 'random_state': 0}
-0.211 (+/-0.178) for {'alpha': 1e-07, 'hidden_layer_sizes': 14, 'random_state': 1}
-0.240 (+/-0.050) for {'alpha': 1e-08, 'hidden_layer_sizes': 5, 'random_state': 0}
-0.017 (+/-0.014) for {'alpha': 1e-08, 'hidden_layer_sizes': 5, 'random_state': 1}
-0.187 (+/-0.241) for {'alpha': 1e-08, 'hidden_layer_sizes': 6, 'random_state': 0}
-0.129 (+/-0.228) for {'alpha': 1e-08, 'hidden_layer_sizes': 6, 'random_state': 1}
-0.205 (+/-0.112) for {'alpha': 1e-08, 'hidden_layer_sizes': 7, 'random_state': 0}
-0.214 (+/-0.050) for {'alpha': 1e-08, 'hidden_layer_sizes': 7, 'random_state': 1}
-0.165 (+/-0.042) for {'alpha': 1e-08, 'hidden_layer_sizes': 8, 'random_state': 0}
-0.201 (+/-0.041) for {'alpha': 1e-08, 'hidden_layer_sizes': 8, 'random_state': 1}
-0.236 (+/-0.081) for {'alpha': 1e-08, 'hidden_layer_sizes': 9, 'random_state': 0}
-0.176 (+/-0.026) for {'alpha': 1e-08, 'hidden_layer_sizes': 9, 'random_state': 1}
-0.070 (+/-0.262) for {'alpha': 1e-08, 'hidden_layer_sizes': 10, 'random_state': 0}
-0.219 (+/-0.046) for {'alpha': 1e-08, 'hidden_layer_sizes': 10, 'random_state': 1}
-0.252 (+/-0.078) for {'alpha': 1e-08, 'hidden_layer_sizes': 11, 'random_state': 0}
-0.212 (+/-0.019) for {'alpha': 1e-08, 'hidden_layer_sizes': 11, 'random_state': 1}
-0.211 (+/-0.027) for {'alpha': 1e-08, 'hidden_layer_sizes': 12, 'random_state': 0}
-0.180 (+/-0.242) for {'alpha': 1e-08, 'hidden_layer_sizes': 12, 'random_state': 1}
-0.177 (+/-0.308) for {'alpha': 1e-08, 'hidden_layer_sizes': 13, 'random_state': 0}
-0.135 (+/-0.067) for {'alpha': 1e-08, 'hidden_layer_sizes': 13, 'random_state': 1}
-0.169 (+/-0.342) for {'alpha': 1e-08, 'hidden_layer_sizes': 14, 'random_state': 0}
-0.178 (+/-0.132) for {'alpha': 1e-08, 'hidden_layer_sizes': 14, 'random_state': 1}
-0.240 (+/-0.050) for {'alpha': 1e-09, 'hidden_layer_sizes': 5, 'random_state': 0}
-0.017 (+/-0.014) for {'alpha': 1e-09, 'hidden_layer_sizes': 5, 'random_state': 1}
-0.187 (+/-0.241) for {'alpha': 1e-09, 'hidden_layer_sizes': 6, 'random_state': 0}
-0.239 (+/-0.365) for {'alpha': 1e-09, 'hidden_layer_sizes': 6, 'random_state': 1}
-0.205 (+/-0.112) for {'alpha': 1e-09, 'hidden_layer_sizes': 7, 'random_state': 0}
-0.214 (+/-0.050) for {'alpha': 1e-09, 'hidden_layer_sizes': 7, 'random_state': 1}
-0.165 (+/-0.042) for {'alpha': 1e-09, 'hidden_layer_sizes': 8, 'random_state': 0}
-0.201 (+/-0.041) for {'alpha': 1e-09, 'hidden_layer_sizes': 8, 'random_state': 1}
-0.236 (+/-0.081) for {'alpha': 1e-09, 'hidden_layer_sizes': 9, 'random_state': 0}
-0.176 (+/-0.026) for {'alpha': 1e-09, 'hidden_layer_sizes': 9, 'random_state': 1}
-0.152 (+/-0.315) for {'alpha': 1e-09, 'hidden_layer_sizes': 10, 'random_state': 0}
-0.219 (+/-0.046) for {'alpha': 1e-09, 'hidden_layer_sizes': 10, 'random_state': 1}
-0.252 (+/-0.078) for {'alpha': 1e-09, 'hidden_layer_sizes': 11, 'random_state': 0}
-0.212 (+/-0.019) for {'alpha': 1e-09, 'hidden_layer_sizes': 11, 'random_state': 1}
-0.212 (+/-0.028) for {'alpha': 1e-09, 'hidden_layer_sizes': 12, 'random_state': 0}
-0.180 (+/-0.242) for {'alpha': 1e-09, 'hidden_layer_sizes': 12, 'random_state': 1}
-0.109 (+/-0.156) for {'alpha': 1e-09, 'hidden_layer_sizes': 13, 'random_state': 0}
-0.196 (+/-0.201) for {'alpha': 1e-09, 'hidden_layer_sizes': 13, 'random_state': 1}
-0.244 (+/-0.266) for {'alpha': 1e-09, 'hidden_layer_sizes': 14, 'random_state': 0}
-0.184 (+/-0.160) for {'alpha': 1e-09, 'hidden_layer_sizes': 14, 'random_state': 1}
+0.173 (+/-0.300) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 0}
+0.268 (+/-0.196) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 1}
+0.173 (+/-0.300) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 0}
+0.268 (+/-0.196) for {'alpha': 0.1, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 1}
+0.275 (+/-0.078) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 0}
+0.236 (+/-0.035) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 1}
+0.275 (+/-0.078) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 0}
+0.236 (+/-0.035) for {'alpha': 0.1, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 1}
+0.210 (+/-0.051) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 0}
+0.229 (+/-0.089) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 1}
+0.210 (+/-0.051) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
+0.229 (+/-0.089) for {'alpha': 0.1, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 1}
+0.208 (+/-0.157) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 0}
+0.241 (+/-0.153) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 1}
+0.208 (+/-0.157) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 0}
+0.241 (+/-0.153) for {'alpha': 0.1, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 1}
+0.288 (+/-0.193) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 0}
+0.292 (+/-0.129) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 1}
+0.288 (+/-0.193) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 0}
+0.292 (+/-0.129) for {'alpha': 0.1, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 1}
+0.225 (+/-0.203) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 0}
+0.332 (+/-0.312) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 1}
+0.225 (+/-0.203) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 0}
+0.332 (+/-0.312) for {'alpha': 0.01, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 1}
+0.279 (+/-0.080) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 0}
+0.241 (+/-0.038) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 1}
+0.279 (+/-0.080) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 0}
+0.241 (+/-0.038) for {'alpha': 0.01, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 1}
+0.211 (+/-0.053) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 0}
+0.177 (+/-0.086) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 1}
+0.211 (+/-0.053) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
+0.177 (+/-0.086) for {'alpha': 0.01, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 1}
+0.312 (+/-0.283) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 0}
+0.339 (+/-0.205) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 1}
+0.312 (+/-0.283) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 0}
+0.339 (+/-0.205) for {'alpha': 0.01, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 1}
+0.200 (+/-0.153) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 0}
+0.231 (+/-0.104) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 1}
+0.200 (+/-0.153) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 0}
+0.231 (+/-0.104) for {'alpha': 0.01, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 1}
+0.331 (+/-0.141) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 0}
+0.443 (+/-0.357) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 1}
+0.331 (+/-0.141) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 0}
+0.443 (+/-0.357) for {'alpha': 0.001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 1}
+0.276 (+/-0.072) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 0}
+0.241 (+/-0.039) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 1}
+0.276 (+/-0.072) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 0}
+0.241 (+/-0.039) for {'alpha': 0.001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 1}
+0.208 (+/-0.058) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 0}
+0.210 (+/-0.175) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 1}
+0.208 (+/-0.058) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
+0.210 (+/-0.175) for {'alpha': 0.001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 1}
+0.183 (+/-0.092) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 0}
+0.310 (+/-0.219) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 1}
+0.183 (+/-0.092) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 0}
+0.310 (+/-0.219) for {'alpha': 0.001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 1}
+0.241 (+/-0.310) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 0}
+0.264 (+/-0.140) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 1}
+0.241 (+/-0.310) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 0}
+0.264 (+/-0.140) for {'alpha': 0.001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 1}
+0.176 (+/-0.366) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 0}
+0.269 (+/-0.281) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 500, 'random_state': 1}
+0.176 (+/-0.366) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 0}
+0.269 (+/-0.281) for {'alpha': 0.0001, 'hidden_layer_sizes': 10, 'max_iter': 1000, 'random_state': 1}
+0.275 (+/-0.078) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 0}
+0.230 (+/-0.029) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 500, 'random_state': 1}
+0.275 (+/-0.078) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 0}
+0.230 (+/-0.029) for {'alpha': 0.0001, 'hidden_layer_sizes': 11, 'max_iter': 1000, 'random_state': 1}
+0.212 (+/-0.048) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 0}
+0.276 (+/-0.184) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 500, 'random_state': 1}
+0.212 (+/-0.048) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 0}
+0.276 (+/-0.184) for {'alpha': 0.0001, 'hidden_layer_sizes': 12, 'max_iter': 1000, 'random_state': 1}
+0.221 (+/-0.178) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 0}
+0.313 (+/-0.219) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 500, 'random_state': 1}
+0.221 (+/-0.178) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 0}
+0.313 (+/-0.219) for {'alpha': 0.0001, 'hidden_layer_sizes': 13, 'max_iter': 1000, 'random_state': 1}
+0.285 (+/-0.314) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 0}
+0.292 (+/-0.170) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 500, 'random_state': 1}
+0.285 (+/-0.314) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 0}
+0.292 (+/-0.170) for {'alpha': 0.0001, 'hidden_layer_sizes': 14, 'max_iter': 1000, 'random_state': 1}
 
 Detailed classification report:
 
 The model is trained on the full development set.
 The scores are computed on the full evaluation set.
-
-Final Performance on Test Set
-MSE: 0.49161073825503354
-
-Accuracy Score: 50.83892617449665%
-
-F1 Score: 0.3883089770354906
-
-              precision    recall  f1-score   support
-
-           0       0.89      0.44      0.59       477
-           1       0.26      0.78      0.39       119
-
-   micro avg       0.51      0.51      0.51       596
-   macro avg       0.57      0.61      0.49       596
-weighted avg       0.76      0.51      0.55       596
-
 

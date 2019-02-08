@@ -2,16 +2,20 @@ import numpy as np
 # Thanks to Scikit-learn
 # Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
 from sklearn.neural_network import MLPClassifier
-from utils import get_hmeq_data, get_pulsar_data, compute_stats, plot_learning_curve, get_optimized_classifier
+from utils import get_hmeq_data, get_pulsar_data, compute_stats, plot_learning_curve, get_optimized_classifier, plot_iteration_curve
 import sys
 import warnings
 warnings.filterwarnings('ignore')
+
+# Thanks to this source for showing grid search with a neural net
+# https://www.kaggle.com/hatone/mlpclassifier-with-gridsearchcv
 
 def run_nn(name, x_train, x_test, y_train, y_test, tuned_parameters):
     print ("Working on {} data".format(name))
 
     img_name = "images/{}_nn_learning_curve.png".format(name)
     img_title = '{} Neural Net Learning Curve'.format(name)
+    iter_name = "iteration_curves/{}_nn.png".format(name)
     report_name = "reports/{}_nn_output.txt".format(name)
     
     sys.stdout = open(report_name, "w")
@@ -37,6 +41,8 @@ def run_nn(name, x_train, x_test, y_train, y_test, tuned_parameters):
     optimized_clf.fit(x_train, y_train)
     y_pred = optimized_clf.predict(x_test)
 
+    plot_iteration_curve(optimized_clf, iter_name, x_test, y_test)
+
     compute_stats(y_test, y_pred)
 
     sys.stdout = sys.__stdout__
@@ -49,8 +55,8 @@ def run_pulsar_nn():
     }
 
     tuned_parameters = {
-        'max_iter': [500, 1000],
-        'alpha': 10.0 ** -np.arange(1, 10),
+        'max_iter': [1000],
+        'alpha': 10.0 ** -np.arange(1, 5),
         'hidden_layer_sizes':np.arange(10, 15),
         'random_state':[0,1]
         }
@@ -61,7 +67,7 @@ def run_pulsar_nn():
 def run_hmeq_nn():
     tuned_parameters = {
         'max_iter': [500, 1000],
-        'alpha': 10.0 ** -np.arange(1, 10),
+        'alpha': 10.0 ** -np.arange(1, 5),
         'hidden_layer_sizes':np.arange(10, 15),
         'random_state':[0,1]
         }
@@ -69,10 +75,12 @@ def run_hmeq_nn():
     x_train, x_test, y_train, y_test = get_hmeq_data()
     run_nn("hmeq", x_train, x_test, y_train, y_test, tuned_parameters)
 
-print ("Running Neural Net Code, this should take a minute or two")
 
-run_pulsar_nn()
-run_hmeq_nn()
+if __name__ == "__main__":
+    print ("Running Neural Net Code, this should take a minute or two")
 
-print ("Finished Running Neural Net")
+    # run_pulsar_nn()
+    run_hmeq_nn()
+
+    print ("Finished Running Neural Net")
 
