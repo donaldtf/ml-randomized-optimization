@@ -19,9 +19,9 @@ Detailed classification report:
 The model is trained on the full development set.
 The scores are computed on the full evaluation set.
 
-Train Time:  0.006879415000000222
+Train Time:  0.006794799000005014
 
-Test Time:  0.014892370999998406
+Test Time:  0.01540084500000205
 
 Final Performance on Test Set
 MSE: 0.024022346368715083

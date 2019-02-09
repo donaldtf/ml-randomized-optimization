@@ -62,7 +62,7 @@ def run_pulsar_nn():
 
 def run_hmeq_nn():
     tuned_parameters = {
-        'max_iter': [500, 1000],
+        'max_iter': [1000],
         'alpha': 10.0 ** -np.arange(1, 5),
         'hidden_layer_sizes':np.arange(10, 15),
         'random_state':[99]
