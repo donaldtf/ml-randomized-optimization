@@ -49,7 +49,7 @@ def run_pulsar_boosting():
         "n_estimators":[10, 15, 20, 25, 30]
     }
 
-    run_boosting("pulsar", x_train, x_test, y_train, y_test, tuned_parameters)
+    run_boosting("Pulsar", x_train, x_test, y_train, y_test, tuned_parameters)
 
 def run_hmeq_boosting():
     x_train, x_test, y_train, y_test = get_hmeq_data()
@@ -60,7 +60,7 @@ def run_hmeq_boosting():
         "n_estimators":[10, 15, 20, 25, 30]
     }
 
-    run_boosting("hmeq", x_train, x_test, y_train, y_test, tuned_parameters)
+    run_boosting("HMEQ", x_train, x_test, y_train, y_test, tuned_parameters)
 
 if __name__ == "__main__":
     print ("Running Boosting Code, this should take a minute or two")

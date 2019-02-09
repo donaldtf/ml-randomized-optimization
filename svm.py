@@ -44,7 +44,7 @@ def run_pulsar_svm():
     }
 
     x_train, x_test, y_train, y_test = get_pulsar_data()
-    run_svm("pulsar", x_train, x_test, y_train, y_test, tuned_parameters)
+    run_svm("Pulsar", x_train, x_test, y_train, y_test, tuned_parameters)
 
 def run_hmeq_svm():
     tuned_parameters = {
@@ -53,7 +53,7 @@ def run_hmeq_svm():
     }
 
     x_train, x_test, y_train, y_test = get_hmeq_data()
-    run_svm("hmeq", x_train, x_test, y_train, y_test, tuned_parameters)
+    run_svm("HMEQ", x_train, x_test, y_train, y_test, tuned_parameters)
 
 if __name__ == "__main__":
     print ("Running SVM Code, this should take a minute or two")

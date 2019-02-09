@@ -42,12 +42,12 @@ def run_knn(name, x_train, x_test, y_train, y_test, tuned_parameters):
 def run_pulsar_knn():
     x_train, x_test, y_train, y_test = get_pulsar_data()
     tuned_parameters = [{'n_neighbors': list(range(1,10))}]
-    run_knn("pulsar", x_train, x_test, y_train, y_test, tuned_parameters)
+    run_knn("Pulsar", x_train, x_test, y_train, y_test, tuned_parameters)
 
 def run_hmeq_knn():
     x_train, x_test, y_train, y_test = get_hmeq_data()
     tuned_parameters = [{'n_neighbors': list(range(1,10))}]
-    run_knn("hmeq", x_train, x_test, y_train, y_test, tuned_parameters)
+    run_knn("HMEQ", x_train, x_test, y_train, y_test, tuned_parameters)
 
 
 if __name__ == "__main__":

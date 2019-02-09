@@ -41,11 +41,11 @@ def run_dt(name, x_train, x_test, y_train, y_test):
 
 def run_pulsar_dt():
     x_train, x_test, y_train, y_test = get_pulsar_data()
-    run_dt("pulsar", x_train, x_test, y_train, y_test)
+    run_dt("Pulsar", x_train, x_test, y_train, y_test)
 
 def run_hmeq_dt():
     x_train, x_test, y_train, y_test = get_hmeq_data()
-    run_dt("hmeq", x_train, x_test, y_train, y_test)
+    run_dt("HMEQ", x_train, x_test, y_train, y_test)
 
 if __name__ == "__main__":
     print ("Running Decision Tree Code, this should take a minute or two")

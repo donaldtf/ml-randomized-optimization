@@ -161,7 +161,7 @@ def plot_learning_curve(estimator, title, X, y, ylim=None, cv=5,
     if ylim is not None:
         plt.ylim(*ylim)
     plt.xlabel("Training examples")
-    plt.ylabel(str(scoring) + " " + "Score")
+    plt.ylabel("F1 Score")
     train_sizes, train_scores, test_scores = learning_curve(
         estimator, X, y, cv=cv, n_jobs=n_jobs, train_sizes=train_sizes, scoring=scoring, random_state=99)
     train_scores_mean = np.mean(train_scores, axis=1)
