@@ -18,7 +18,7 @@ This repo contains all the code needed to reproduce my results, including the da
 /reports - while running each algorithm, I feed the standard output into a report file here instead of to the console.
            This file holds stats on grid search results, test data performance and wall clock times
 /utils.py - this is a utility file that holds shared functionality between the algorithms 
-            (loading and prepping data, generating learning curves, etc)
+            (loading and prepping data, plotting learning curves, etc)
 
 
 ### Install Dependencies ###

@@ -41,8 +41,8 @@ def get_hmeq_data():
 
     # Factorize text columns
     for column in text_features:
-        temp, not_needed  = pd.factorize(hmeq[column])
-        hmeq[column] = temp
+        factorized_data, not_needed  = pd.factorize(hmeq[column])
+        hmeq[column] = factorized_data
 
     y = hmeq[target]
     x = hmeq[features]

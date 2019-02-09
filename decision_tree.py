@@ -13,7 +13,10 @@ def run_dt(name, x_train, x_test, y_train, y_test):
 
     sys.stdout = open(report_name, "w")
 
-    tuned_parameters = [{'min_samples_split': list(range(2,100))}]
+    tuned_parameters = [{
+        'min_samples_split': list(range(40,70)),
+        "min_samples_leaf": list(range(1, 10)),
+        }]
 
     clf = get_optimized_classifier(
         estimator=DecisionTreeClassifier(random_state=99),
