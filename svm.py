@@ -5,6 +5,8 @@ from sklearn.svm import SVC
 from utils import get_hmeq_data, get_pulsar_data, run_optimized, plot_learning_curve, get_optimized_classifier, plot_iterations
 import sys
 
+# https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+
 def run_svm(name, x_train, x_test, y_train, y_test, tuned_parameters, iter_range):
     print ("Working on {} data...".format(name))
 

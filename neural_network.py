@@ -5,6 +5,8 @@ from sklearn.neural_network import MLPClassifier
 from utils import get_hmeq_data, get_pulsar_data, run_optimized, plot_learning_curve, get_optimized_classifier, plot_iterations
 import sys
 
+# https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html
+
 # Thanks to this source for showing grid search with a neural net
 # https://www.kaggle.com/hatone/mlpclassifier-with-gridsearchcv
 

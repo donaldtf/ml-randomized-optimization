@@ -4,6 +4,8 @@ from sklearn.tree import DecisionTreeClassifier
 from utils import get_hmeq_data, get_pulsar_data, run_optimized, plot_learning_curve, get_optimized_classifier
 import sys
 
+# https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
+
 def run_dt(name, x_train, x_test, y_train, y_test):
     print ("Working on {} data...".format(name))
 

@@ -63,7 +63,3 @@ Note: Running all of the algorithms at once may take several minutes (5 - 10 min
 Side Note: When generating iteration graphs, you may see warnings that the function finished before it converged
 I was unable to remove these errors, but it is fine they are there since lower max_iter numbers are used purposefully for
 plotting purposes.
-
-
-@ Todo delete this before submitting, also try cloning the repo and running everything one last time
-To activate the environment needed run: source activate ml_assignment_1

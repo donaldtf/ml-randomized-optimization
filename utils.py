@@ -10,8 +10,6 @@ from sklearn.impute import SimpleImputer
 from sklearn.metrics import mean_squared_error, accuracy_score, f1_score, classification_report
 from sklearn import ensemble
 import timeit
-import warnings
-warnings.filterwarnings("ignore") # to ignore convergence warnings
 
 # Thanks to these sources for examples on loading data in pandas
 # https://medium.com/dunder-data/from-pandas-to-scikit-learn-a-new-exciting-workflow-e88e2271ef62

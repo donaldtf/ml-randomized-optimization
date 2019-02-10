@@ -4,6 +4,8 @@ from sklearn.ensemble import GradientBoostingClassifier
 from utils import get_hmeq_data, get_pulsar_data, run_optimized, plot_learning_curve, get_optimized_classifier, plot_boosting_iteration_curve
 import sys
 
+# https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html
+
 def run_boosting(name, x_train, x_test, y_train, y_test, tuned_parameters):
     print ("Working on {} data...".format(name))
 
