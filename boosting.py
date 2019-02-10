@@ -1,7 +1,7 @@
 # Thanks to Scikit-learn
 # Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
 from sklearn.ensemble import GradientBoostingClassifier
-from utils import get_hmeq_data, get_pulsar_data, run_optimized, plot_learning_curve, get_optimized_classifier, plot_iteration_curve
+from utils import get_hmeq_data, get_pulsar_data, run_optimized, plot_learning_curve, get_optimized_classifier, plot_boosting_iteration_curve
 import sys
 
 def run_boosting(name, x_train, x_test, y_train, y_test, tuned_parameters):
@@ -10,6 +10,7 @@ def run_boosting(name, x_train, x_test, y_train, y_test, tuned_parameters):
     img_name = "images/{}_boosting_learning_curve.png".format(name)
     iter_name = "iteration_curves/{}_boosting.png".format(name)
     img_title = '{} Boosting Learning Curve'.format(name)
+    iter_title = '{} Boosting Iterations Learning Curve'.format(name)
     report_name = "reports/{}_boosting_output.txt".format(name)
     
     sys.stdout = open(report_name, "w")
@@ -34,7 +35,7 @@ def run_boosting(name, x_train, x_test, y_train, y_test, tuned_parameters):
 
     run_optimized(optimized_clf, x_train, y_train, x_test, y_test)
 
-    # plot_iteration_curve(optimized_clf, iter_name, x_test, y_test)
+    plot_boosting_iteration_curve(optimized_clf, iter_name, iter_title, x_test, y_test)
 
     sys.stdout = sys.__stdout__
     print ("Finished {} boosting!".format(name))

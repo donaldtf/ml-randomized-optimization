@@ -5,11 +5,13 @@ mpl.use('agg')
 import matplotlib.pyplot as plt
 # Thanks to Scikit-learn
 # Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
-from sklearn.model_selection import train_test_split, learning_curve, GridSearchCV
+from sklearn.model_selection import train_test_split, learning_curve, GridSearchCV, validation_curve
 from sklearn.impute import SimpleImputer
-from sklearn.metrics import mean_squared_error, accuracy_score, f1_score, classification_report, recall_score
+from sklearn.metrics import mean_squared_error, accuracy_score, f1_score, classification_report
 from sklearn import ensemble
 import timeit
+import warnings
+warnings.filterwarnings("ignore") # to ignore convergence warnings
 
 # Thanks to these sources for examples on loading data in pandas
 # https://medium.com/dunder-data/from-pandas-to-scikit-learn-a-new-exciting-workflow-e88e2271ef62
@@ -184,24 +186,55 @@ def plot_learning_curve(estimator, title, X, y, ylim=None, cv=5,
 
     plt.savefig(file_name)
 
+def plot_iterations(estimator, title, X, y, param_name, param_range, ylim=None, cv=5,
+                        n_jobs=-1, scoring="f1", file_name="temp.png"):
+    plt.figure()
+    plt.title(title)
+    if ylim is not None:
+        plt.ylim(*ylim)
+    plt.xlabel(param_name)
+    plt.ylabel("F1 Score")
+    train_scores, test_scores = validation_curve(
+        estimator, X, y, param_name, param_range, cv=cv, n_jobs=n_jobs, scoring=scoring)
+    train_scores_mean = np.mean(train_scores, axis=1)
+    train_scores_std = np.std(train_scores, axis=1)
+    test_scores_mean = np.mean(test_scores, axis=1)
+    test_scores_std = np.std(test_scores, axis=1)
+    plt.grid()
+
+    plt.fill_between(param_range, train_scores_mean - train_scores_std,
+                     train_scores_mean + train_scores_std, alpha=0.1,
+                     color="r")
+    plt.fill_between(param_range, test_scores_mean - test_scores_std,
+                     test_scores_mean + test_scores_std, alpha=0.1, color="g")
+    plt.plot(param_range, train_scores_mean, 'o-', color="r",
+             label="Training score")
+    plt.plot(param_range, test_scores_mean, 'o-', color="g",
+             label="Cross-validation score")
+
+    plt.legend(loc="best")
+
+    plt.savefig(file_name)
+
 # Thanks to Winnie Yeung for posting this in Piazza 
 # https://piazza.com/class/jql7qq4dehu3c?cid=253
-def plot_iteration_curve(clf, file_name,  x_test, y_test):
+def plot_boosting_iteration_curve(clf, file_name, title, x_test, y_test):
     plt.figure()
     real_test_errors = []
 
     for real_test_predict in clf.staged_predict(x_test):
-        real_test_errors.append(1. - recall_score(real_test_predict, y_test))
+        real_test_errors.append(f1_score(real_test_predict, y_test))
 
     n_trees_discrete = len(clf)
 
     plt.figure()
+    plt.grid()
     plt.plot(range(1, n_trees_discrete + 1),
-            real_test_errors, c='blue', label='SAMME')
+            real_test_errors, 'o-', color="g", label='Score')
     plt.legend()
-    plt.ylabel('Test Error')
+    plt.ylabel('F1 Score')
     plt.xlabel('Number of Trees')
-    plt.title('Test Error With Number of Trees')
+    plt.title(title)
 
     plt.savefig(file_name)
 
