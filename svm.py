@@ -76,7 +76,7 @@ if __name__ == "__main__":
     print ("Running SVM Code, this should take a minute or two")
 
     run_pulsar_svm()
-    # run_hmeq_svm()
+    run_hmeq_svm()
 
     print ("Finished Running SVM")
 
