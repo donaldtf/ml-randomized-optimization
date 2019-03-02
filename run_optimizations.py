@@ -95,7 +95,7 @@ plt.savefig("images/queen_time.png")
 # Plot OneMax Values
 plt.figure()
 plt.title("OneMax Optimization Values")
-plt.xlabel("OneMax Bits")
+plt.xlabel("Number of Bits")
 plt.ylabel("Max Value")
 
 plt.grid()
@@ -112,7 +112,7 @@ plt.savefig("images/one_max_values.png")
 # Plot OneMax Times
 plt.figure()
 plt.title("OneMax Optimization Execution Time")
-plt.xlabel("OneMax Bits")
+plt.xlabel("Number of Bits")
 plt.ylabel("Time (sec)")
 
 plt.grid()
@@ -148,7 +148,7 @@ plt.savefig("images/knapsack_values.png")
 # Plot Knapsack Times
 plt.figure()
 plt.title("Knapsack Optimization Execution Time")
-plt.xlabel("Knapsack Size")
+plt.xlabel("Number of Knapsack Items")
 plt.ylabel("Time (sec)")
 
 plt.grid()
