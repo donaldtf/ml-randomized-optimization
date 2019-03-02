@@ -30,31 +30,6 @@ def get_pulsar_data():
 
     return x_train, x_test, y_train, y_test
 
-# https://www.kaggle.com/ajay1735/hmeq-data
-def get_hmeq_data():
-    hmeq = pd.read_csv('data/hmeq.csv')
-    target = "BAD"
-
-    features = list(hmeq.columns.values)
-    features.remove(target)
-    text_features = ["REASON", "JOB"]
-
-    # Factorize text columns
-    for column in text_features:
-        factorized_data, not_needed  = pd.factorize(hmeq[column])
-        hmeq[column] = factorized_data
-
-    y = hmeq[target]
-    x = hmeq[features]
-
-    # https://scikit-learn.org/stable/modules/impute.html
-    imp = SimpleImputer(strategy="constant", fill_value=-1)
-    x = pd.DataFrame(imp.fit_transform(x))
-
-    x_train, x_test, y_train, y_test = train_test_split(x, y, stratify=y, test_size=0.10, random_state=99)
-
-    return x_train, x_test, y_train, y_test
-
 # Thanks to this link for some wonderful examples
 # https://scikit-learn.org/stable/auto_examples/model_selection/plot_grid_search_digits.html
 def get_optimized_classifier(estimator, tuned_parameters, x_train, y_train, cv=5, scoring="f1"):
@@ -211,28 +186,6 @@ def plot_iterations(estimator, title, X, y, param_name, param_range, ylim=None, 
              label="Cross-validation score")
 
     plt.legend(loc="best")
-
-    plt.savefig(file_name)
-
-# Thanks to Winnie Yeung for posting this in Piazza 
-# https://piazza.com/class/jql7qq4dehu3c?cid=253
-def plot_boosting_iteration_curve(clf, file_name, title, x_test, y_test):
-    plt.figure()
-    real_test_errors = []
-
-    for real_test_predict in clf.staged_predict(x_test):
-        real_test_errors.append(f1_score(real_test_predict, y_test))
-
-    n_trees_discrete = len(clf)
-
-    plt.figure()
-    plt.grid()
-    plt.plot(range(1, n_trees_discrete + 1),
-            real_test_errors, 'o-', color="g", label='Score')
-    plt.legend()
-    plt.ylabel('F1 Score')
-    plt.xlabel('Number of Trees')
-    plt.title(title)
 
     plt.savefig(file_name)
 

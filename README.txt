@@ -6,9 +6,9 @@
 
 In order to recreate the results shown in my report, please clone the following repo from github.
 
-https://github.com/donaldtf/ml-supervised-learning
+https://github.com/donaldtf/ml-randomized-optimization
 
-Or you can just use this command to clone it via ssh: `git clone git@github.com:donaldtf/ml-supervised-learning.git`
+Or you can just use this command to clone it via ssh: `git@github.com:donaldtf/ml-randomized-optimization.git`
 
 This repo contains all the code needed to reproduce my results, including the data sets that were used. The project structure looks like this:
 
@@ -30,15 +30,7 @@ The code relies on the following dependencies in order to run. You can install t
 - numpy
 - matplotlib
 
-For example, you could follow these steps to get it working with conda
-
-1. Install Miniconda: https://conda.io/miniconda.html
-2. Create a virtual environment and activate it
-3. Run the following commands
-    - conda install scikit-learn
-    - conda install pandas
-    - conda install matplotlib
-    - conda install numpy
+The last dependency is mlrose. This will need to be installed via pip. See the readme here for installation instructions: https://github.com/gkhayes/mlrose
 
 Once these are all installed you should be ready to run the code
 
@@ -49,11 +41,7 @@ Running the code is simple once you have your dependencies installed. If you wan
 
 `python {algorithm}.py` where algorithm is the name of the file you want to run. The available files are
 
-- boosting.py
-- decision_tree.py
-- knn.py
 - neural_network.py
-- svm.py
 
 Alternatively, if you would like to run all of the algorithms in bulk you can simply run:
 
@@ -63,3 +51,7 @@ Note: Running all of the algorithms at once may take several minutes (5 - 10 min
 Side Note: When generating iteration graphs, you may see warnings that the function finished before it converged
 I was unable to remove these errors, but it is fine they are there since lower max_iter numbers are used purposefully for
 plotting purposes.
+
+
+
+Hayes, G. (2019). mlrose: Machine Learning, Randomized Optimization and SEarch package for Python. https://github.com/gkhayes/mlrose. Accessed: day month year.

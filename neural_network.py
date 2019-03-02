@@ -2,7 +2,7 @@ import numpy as np
 # Thanks to Scikit-learn
 # Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
 from sklearn.neural_network import MLPClassifier
-from utils import get_hmeq_data, get_pulsar_data, run_optimized, plot_learning_curve, get_optimized_classifier, plot_iterations
+from utils import get_pulsar_data, run_optimized, plot_learning_curve, get_optimized_classifier, plot_iterations
 import sys
 
 # https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html
@@ -73,24 +73,10 @@ def run_pulsar_nn():
     x_train, x_test, y_train, y_test = get_pulsar_data()
     run_nn("Pulsar", x_train, x_test, y_train, y_test, tuned_parameters, iter_range)
 
-def run_hmeq_nn():
-    tuned_parameters = {
-        'max_iter': [1000],
-        'alpha': 10.0 ** -np.arange(1, 5),
-        'hidden_layer_sizes':np.arange(10, 15),
-        'random_state':[99]
-        }
-
-    iter_range = np.arange(1,50,5)
-
-    x_train, x_test, y_train, y_test = get_hmeq_data()
-    run_nn("HMEQ", x_train, x_test, y_train, y_test, tuned_parameters, iter_range)
-
 if __name__ == "__main__":
     print ("Running Neural Net Code, this should take a minute or two")
 
     run_pulsar_nn()
-    run_hmeq_nn()
 
     print ("Finished Running Neural Net")
 
