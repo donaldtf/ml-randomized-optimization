@@ -1,6 +1,6 @@
-Train Time:  1.567449394
+Train Time:  1.66827949
 
-Test Time:  0.0033157749999999098
+Test Time:  0.0037155339999999093
 
 Final Performance on Test Set
 MSE: 0.020670391061452513
