@@ -64,10 +64,12 @@ plt.ylabel("Max Value")
 
 plt.grid()
 
-plt.plot(queen_range, queen_rhc_avgs, 'o-', color="red", label="Random Hill Climbing")
-plt.plot(queen_range, queen_sa_avgs, 'o-', color="green", label="Simulated Annealing")
-plt.plot(queen_range, queen_ga_avgs, 'o-', color="blue", label="Genetic Algorithm")
-plt.plot(queen_range, queen_mimic_avgs, 'o-', color="black", label="MIMIC")
+n_queens = np.array(queen_range)
+
+plt.plot(queen_range, n_queens - np.array(queen_rhc_avgs), 'o-', color="red", label="Random Hill Climbing")
+plt.plot(queen_range, n_queens - np.array(queen_sa_avgs), 'o-', color="green", label="Simulated Annealing")
+plt.plot(queen_range, n_queens - np.array(queen_ga_avgs), 'o-', color="blue", label="Genetic Algorithm")
+plt.plot(queen_range, n_queens - np.array(queen_mimic_avgs), 'o-', color="black", label="MIMIC")
 
 plt.legend(loc="best")
 

@@ -18,7 +18,7 @@ def one_max(bit_length = 50):
 def queens(n_queens = 16):
     fitness_fn = mlrose.Queens()
 
-    problem = mlrose.DiscreteOpt(length = n_queens, fitness_fn = fitness_fn, max_val = n_queens)
+    problem = mlrose.DiscreteOpt(length = n_queens, maximize=False, fitness_fn = fitness_fn, max_val = n_queens)
 
     return problem
 
