@@ -10,8 +10,8 @@ np.random.seed(92)
 num_runs = 5
 
 queen_range = range(4, 32, 4)
-one_max_range = range(10, 50, 10)
-knapsack_range = range(2, 10)
+one_max_range = range(10, 60, 10)
+knapsack_range = range(3, 9)
 
 print()
 print ("Running Random Hill Climbing...")
@@ -60,7 +60,7 @@ knapsack_mimic_avgs, knapsack_mimic_times = run_mimic(knapsack, knapsack_range, 
 plt.figure()
 plt.title("N Queens Optimization Values")
 plt.xlabel("Number of Queens")
-plt.ylabel("Max Value")
+plt.ylabel("Number of Non Attacking Queens")
 
 plt.grid()
 
@@ -98,7 +98,7 @@ plt.savefig("images/queen_time.png")
 plt.figure()
 plt.title("OneMax Optimization Values")
 plt.xlabel("Number of Bits")
-plt.ylabel("Max Value")
+plt.ylabel("Value of Bit String")
 
 plt.grid()
 
@@ -133,8 +133,8 @@ plt.savefig("images/one_max_time.png")
 # Plot Knapsack Values
 plt.figure()
 plt.title("Knapsack Optimization Values")
-plt.xlabel("Number of Knapsack Items")
-plt.ylabel("Max Value")
+plt.xlabel("Number of Items in Knapsack")
+plt.ylabel("Knapsack Value")
 
 plt.grid()
 
@@ -150,7 +150,7 @@ plt.savefig("images/knapsack_values.png")
 # Plot Knapsack Times
 plt.figure()
 plt.title("Knapsack Optimization Execution Time")
-plt.xlabel("Number of Knapsack Items")
+plt.xlabel("Number of Items in Knapsack")
 plt.ylabel("Time (sec)")
 
 plt.grid()
