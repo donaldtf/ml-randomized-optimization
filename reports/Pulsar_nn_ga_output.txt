@@ -1,0 +1,21 @@
+Train Time:  15.280429886000002
+
+Test Time:  0.00032432899999790266
+
+Final Performance on Test Set
+MSE: 0.03128491620111732
+
+Accuracy Score: 96.87150837988827%
+
+F1 Score: 0.8028169014084506
+
+              precision    recall  f1-score   support
+
+           0       0.97      1.00      0.98      1626
+           1       0.95      0.70      0.80       164
+
+   micro avg       0.97      0.97      0.97      1790
+   macro avg       0.96      0.85      0.89      1790
+weighted avg       0.97      0.97      0.97      1790
+
+
